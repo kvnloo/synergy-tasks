@@ -1,5 +1,5 @@
-roadmap_revision: 68af50ab49db1256f4aafe5fc84667ebb143e189
-updated_at: 2026-09-09T04:20:16Z
+roadmap_revision: 9949c765bbf701398832494d6da2ec91839567f1
+updated_at: 2026-09-09T05:25:40Z
 owners:
   - kvnloo
 items:
@@ -56,5 +56,20 @@ items:
   - issue: 13
     priority: P1
     acceptance: Seven reviewed dates; correction URL carries task_type=verify-evidence; home widget opens the right slide with the form.
+    claimable: true
+    repo: kvnloo/synergy.ai
+  - issue: 14
+    priority: P1
+    acceptance: Every source shows a non-empty evidence type badge; unknown types fall back to relation.
+    claimable: true
+    repo: kvnloo/synergy.ai
+  - issue: 15
+    priority: P1
+    acceptance: Explanation box on final slide; chain rebuild accepts correct order and writes recall state.
+    claimable: true
+    repo: kvnloo/synergy.ai
+  - issue: 16
+    priority: P1
+    acceptance: sleep-infrastructure brief opens with five slides; briefs export count 8.
     claimable: true
     repo: kvnloo/synergy.ai
