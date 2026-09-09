@@ -1,5 +1,5 @@
-roadmap_revision: 9949c765bbf701398832494d6da2ec91839567f1
-updated_at: 2026-09-09T05:25:40Z
+roadmap_revision: baebcb0c168bc5f6c0e5503268ab54b75ff4b1ce
+updated_at: 2026-09-09T05:38:24Z
 owners:
   - kvnloo
 items:
@@ -71,5 +71,20 @@ items:
   - issue: 16
     priority: P1
     acceptance: sleep-infrastructure brief opens with five slides; briefs export count 8.
+    claimable: true
+    repo: kvnloo/synergy.ai
+  - issue: 17
+    priority: P1
+    acceptance: psychological-first-aid brief opens with five slides; briefs export count 9.
+    claimable: true
+    repo: kvnloo/synergy.ai
+  - issue: 18
+    priority: P1
+    acceptance: After done stamp, reload shows stop UI for today; due recall still available.
+    claimable: true
+    repo: kvnloo/synergy.ai
+  - issue: 19
+    priority: P1
+    acceptance: Read-aloud queues speech; slide change cancels; safe without speech API.
     claimable: true
     repo: kvnloo/synergy.ai
