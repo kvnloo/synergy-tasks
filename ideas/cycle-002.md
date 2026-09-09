@@ -4,8 +4,8 @@
 
 | # | Idea | R | I | D | F | Score | Status |
 |---|---|---|---|---|---|---|---|
-| 4 | Chain-rebuild drill: shuffled chain steps to put back in order | 4 | 4 | 4 | 4 | 256 | merged→F2 |
-| 5 | Two-sentence explanation box after reading, compared against the brief summary | 4 | 4 | 4 | 5 | 320 | selected F2 |
+| 4 | Chain-rebuild drill: shuffled chain steps to put back in order | 4 | 4 | 4 | 4 | 256 | merged into #5 |
+| 5 | Two-sentence explanation box after reading, compared against the brief summary | 4 | 4 | 4 | 5 | 320 | shipped |
 | 6 | "Next brief" picks a different topic than the last one read | 3 | 3 | 2 | 5 | 90 | open |
 | 7 | Honest retention ledger: claims recalled this month, device-only | 3 | 3 | 2 | 5 | 90 | open |
 | 8 | Export recall prompts as CSV for flashcard apps | 3 | 4 | 3 | 5 | 180 | open |
@@ -17,7 +17,7 @@
 | 18 | Embeddable brief widget for partner sites | 4 | 3 | 3 | 3 | 108 | open |
 | 19 | One-command self-host mirror for intranets | 3 | 3 | 3 | 4 | 108 | open |
 | 20 | SMS/USSD brief digest | 5 | 2 | 3 | 1 | 30 | open |
-| 25 | Evidence type badges: guidance, peer-reviewed, reporting, dataset | 5 | 4 | 4 | 5 | 400 | selected F1 |
+| 25 | Evidence type badges: guidance, peer-reviewed, reporting, dataset | 5 | 4 | 4 | 5 | 400 | shipped |
 | 26 | Strongest counter-evidence field per slide | 4 | 4 | 4 | 3 | 192 | open |
 | 27 | Change log per brief, including retractions | 4 | 4 | 3 | 4 | 192 | open |
 | 28 | Source link liveness check in CI | 4 | 5 | 3 | 5 | 300 | open |
@@ -43,7 +43,7 @@
 | 48 | Community translation UI that outputs a PR-ready file | 4 | 3 | 4 | 3 | 144 | open |
 | 49 | Multilingual glossary | 4 | 3 | 3 | 3 | 108 | open |
 | 50 | High-contrast theme | 3 | 5 | 2 | 5 | 150 | open |
-| 51 | Brief: sleep as public-health infrastructure (shift work, heat, light) | 5 | 4 | 4 | 4 | 320 | selected F3 |
+| 51 | Brief: sleep as public-health infrastructure (shift work, heat, light) | 5 | 4 | 4 | 4 | 320 | shipped |
 | 52 | Brief: psychological first aid in crises | 5 | 4 | 4 | 4 | 320 | open |
 | 53 | Brief: micronutrient deficiency chains in food insecurity | 5 | 3 | 4 | 3 | 180 | open |
 | 54 | Brief: vaccine cold-chain logistics | 5 | 3 | 4 | 3 | 180 | open |
@@ -55,7 +55,7 @@
 | 60 | Brief: movement and physical activity in low-resource settings | 4 | 3 | 3 | 3 | 108 | open |
 | 61 | Printable heat-safety checklist for outdoor workers | 4 | 4 | 3 | 4 | 192 | open |
 | 62 | Work/rest schedule calculator for heat | 3 | 3 | 3 | 3 | 81 | open |
-| 63 | Sleep protocol checklist for shift responders | 4 | 4 | 3 | 4 | 192 | merged→F3 |
+| 63 | Sleep protocol checklist for shift responders | 4 | 4 | 3 | 4 | 192 | merged into #51 |
 | 64 | Micronutrient quick reference for field workers | 3 | 2 | 3 | 3 | 54 | open |
 | 65 | Language Relay failure-mode checklist as an interactive tool | 3 | 3 | 3 | 4 | 108 | open |
 | 66 | Needs Map research questionnaire as a static form that files an issue | 3 | 3 | 3 | 4 | 108 | open |
@@ -94,7 +94,7 @@
 | 99 | Discussion link per brief for open questions | 3 | 4 | 2 | 5 | 120 | open |
 | 100 | Office-hours page with a static schedule | 2 | 3 | 2 | 5 | 60 | open |
 | 101 | Spaced recall digests: one due card as a printable card, no account | 4 | 4 | 3 | 5 | 240 | open |
-| 102 | Evidence badge strip on each source: guidance / peer-reviewed / reporting / dataset | 5 | 4 | 4 | 4 | 320 | merged→F1 |
+| 102 | Evidence badge strip on each source: guidance / peer-reviewed / reporting / dataset | 5 | 4 | 4 | 4 | 320 | merged into #25 |
 | 103 | Correction inbox badge on home: count of open verify-evidence tasks | 3 | 4 | 2 | 5 | 120 | open |
 | 104 | Offline-first language pack hook: detect navigator.language, fall back cleanly | 4 | 3 | 3 | 4 | 144 | open |
 | 105 | Source liveness CI job that opens a task when a cited URL 404s | 4 | 5 | 3 | 5 | 300 | open |
@@ -102,7 +102,7 @@
 | 107 | Micro-task lane: 5-minute verify tasks sorted above 45-minute ones on the board | 4 | 4 | 4 | 4 | 256 | open |
 | 108 | Persist whiteboard drafts in localStorage across reloads | 4 | 5 | 3 | 5 | 300 | open |
 | 109 | Volunteer paths page: verify · donate compute · write a brief | 4 | 5 | 3 | 5 | 300 | open |
-| 110 | Chain rebuild interactive: drag steps into order, grade against slide chain | 4 | 4 | 4 | 4 | 256 | merged→F2 |
+| 110 | Chain rebuild interactive: drag steps into order, grade against slide chain | 4 | 4 | 4 | 4 | 256 | merged into #5 |
 | 111 | Read-aloud button using speechSynthesis for the current slide | 4 | 5 | 3 | 5 | 300 | open |
 
 ### Selection
@@ -131,4 +131,11 @@
 
 ## Outcome
 
-_(fill after implementation)_
+Shipped:
+- **F1 Evidence you can scan** (#25+#102) in `kvnloo/synergy.ai@5cf0dc8` — `.evidence-type` pills from `kind` or relation map.
+- **F2 Explain it back** (#5+#4+#110) — two-sentence check vs summary; interactive chain rebuild grades into device recall state.
+- **F3 Sleep brief** (#51+#63) — `sleep-infrastructure` five-slide brief with shift/heat/light chain and responder checklist incentives; briefs export count 8.
+
+Cut: none.
+
+Weighting for cycle 003: #52 PFA brief still top content candidate; source liveness CI (#28/#105) and done-for-today (#32/#106) are the highest remaining product surfaces after trust+retention.

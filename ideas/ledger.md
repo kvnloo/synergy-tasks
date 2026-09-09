@@ -7,8 +7,8 @@ Statuses: `open`, `selected`, `merged→Fn`, `shipped`, `merged into #n`, `defer
 | 1 | Recall prompts per brief: one cue per slide plus a chain rebuild; reveal, then self-grade | 5 | 5 | 4 | 5 | 500 | shipped | 001 |
 | 2 | "Due today" recall queue on the home page from the self-grades, scheduled on the device | 4 | 4 | 4 | 5 | 320 | merged into #1 | 001 |
 | 3 | Priming line on slide 1: the five questions this brief answers, shown before reading | 4 | 4 | 3 | 5 | 240 | merged into #1 | 001 |
-| 4 | Chain-rebuild drill: shuffled chain steps to put back in order | 4 | 4 | 4 | 4 | 256 | merged→F2 | 002 |
-| 5 | Two-sentence explanation box after reading, compared against the brief summary | 4 | 4 | 4 | 5 | 320 | selected F2 | 002 |
+| 4 | Chain-rebuild drill: shuffled chain steps to put back in order | 4 | 4 | 4 | 4 | 256 | merged into #5 | 002 |
+| 5 | Two-sentence explanation box after reading, compared against the brief summary | 4 | 4 | 4 | 5 | 320 | shipped | 002 |
 | 6 | "Next brief" picks a different topic than the last one read | 3 | 3 | 2 | 5 | 90 | open | 002 |
 | 7 | Honest retention ledger: claims recalled this month, device-only | 3 | 3 | 2 | 5 | 90 | open | 002 |
 | 8 | Export recall prompts as CSV for flashcard apps | 3 | 4 | 3 | 5 | 180 | open | 002 |
@@ -28,7 +28,7 @@ Statuses: `open`, `selected`, `merged→Fn`, `shipped`, `merged into #n`, `defer
 | 22 | "Verify this source" three-minute micro-task: supports/contradicts plus the exact passage | 4 | 5 | 4 | 4 | 320 | merged into #21 | 001 |
 | 23 | "One claim to check today" on the home page | 4 | 5 | 3 | 5 | 300 | merged into #21 | 001 |
 | 24 | Last-reviewed date on every brief | 5 | 5 | 2 | 5 | 250 | merged into #21 | 001 |
-| 25 | Evidence type badges: guidance, peer-reviewed, reporting, dataset | 5 | 4 | 4 | 5 | 400 | selected F1 | 002 |
+| 25 | Evidence type badges: guidance, peer-reviewed, reporting, dataset | 5 | 4 | 4 | 5 | 400 | shipped | 002 |
 | 26 | Strongest counter-evidence field per slide | 4 | 4 | 4 | 3 | 192 | open | 002 |
 | 27 | Change log per brief, including retractions | 4 | 4 | 3 | 4 | 192 | open | 002 |
 | 28 | Source link liveness check in CI | 4 | 5 | 3 | 5 | 300 | open | 002 |
@@ -54,7 +54,7 @@ Statuses: `open`, `selected`, `merged→Fn`, `shipped`, `merged into #n`, `defer
 | 48 | Community translation UI that outputs a PR-ready file | 4 | 3 | 4 | 3 | 144 | open | 002 |
 | 49 | Multilingual glossary | 4 | 3 | 3 | 3 | 108 | open | 002 |
 | 50 | High-contrast theme | 3 | 5 | 2 | 5 | 150 | open | 002 |
-| 51 | Brief: sleep as public-health infrastructure (shift work, heat, light) | 5 | 4 | 4 | 4 | 320 | selected F3 | 002 |
+| 51 | Brief: sleep as public-health infrastructure (shift work, heat, light) | 5 | 4 | 4 | 4 | 320 | shipped | 002 |
 | 52 | Brief: psychological first aid in crises | 5 | 4 | 4 | 4 | 320 | open | 002 |
 | 53 | Brief: micronutrient deficiency chains in food insecurity | 5 | 3 | 4 | 3 | 180 | open | 002 |
 | 54 | Brief: vaccine cold-chain logistics | 5 | 3 | 4 | 3 | 180 | open | 002 |
@@ -66,7 +66,7 @@ Statuses: `open`, `selected`, `merged→Fn`, `shipped`, `merged into #n`, `defer
 | 60 | Brief: movement and physical activity in low-resource settings | 4 | 3 | 3 | 3 | 108 | open | 002 |
 | 61 | Printable heat-safety checklist for outdoor workers | 4 | 4 | 3 | 4 | 192 | open | 002 |
 | 62 | Work/rest schedule calculator for heat | 3 | 3 | 3 | 3 | 81 | open | 002 |
-| 63 | Sleep protocol checklist for shift responders | 4 | 4 | 3 | 4 | 192 | merged→F3 | 002 |
+| 63 | Sleep protocol checklist for shift responders | 4 | 4 | 3 | 4 | 192 | merged into #51 | 002 |
 | 64 | Micronutrient quick reference for field workers | 3 | 2 | 3 | 3 | 54 | open | 002 |
 | 65 | Language Relay failure-mode checklist as an interactive tool | 3 | 3 | 3 | 4 | 108 | open | 002 |
 | 66 | Needs Map research questionnaire as a static form that files an issue | 3 | 3 | 3 | 4 | 108 | open | 002 |
@@ -105,7 +105,7 @@ Statuses: `open`, `selected`, `merged→Fn`, `shipped`, `merged into #n`, `defer
 | 99 | Discussion link per brief for open questions | 3 | 4 | 2 | 5 | 120 | open | 002 |
 | 100 | Office-hours page with a static schedule | 2 | 3 | 2 | 5 | 60 | open | 002 |
 | 101 | Spaced recall digests: one due card as a printable card, no account | 4 | 4 | 3 | 5 | 240 | open | 002 |
-| 102 | Evidence badge strip on each source: guidance / peer-reviewed / reporting / dataset | 5 | 4 | 4 | 4 | 320 | merged→F1 | 002 |
+| 102 | Evidence badge strip on each source: guidance / peer-reviewed / reporting / dataset | 5 | 4 | 4 | 4 | 320 | merged into #25 | 002 |
 | 103 | Correction inbox badge on home: count of open verify-evidence tasks | 3 | 4 | 2 | 5 | 120 | open | 002 |
 | 104 | Offline-first language pack hook: detect navigator.language, fall back cleanly | 4 | 3 | 3 | 4 | 144 | open | 002 |
 | 105 | Source liveness CI job that opens a task when a cited URL 404s | 4 | 5 | 3 | 5 | 300 | open | 002 |
@@ -113,5 +113,5 @@ Statuses: `open`, `selected`, `merged→Fn`, `shipped`, `merged into #n`, `defer
 | 107 | Micro-task lane: 5-minute verify tasks sorted above 45-minute ones on the board | 4 | 4 | 4 | 4 | 256 | open | 002 |
 | 108 | Persist whiteboard drafts in localStorage across reloads | 4 | 5 | 3 | 5 | 300 | open | 002 |
 | 109 | Volunteer paths page: verify · donate compute · write a brief | 4 | 5 | 3 | 5 | 300 | open | 002 |
-| 110 | Chain rebuild interactive: drag steps into order, grade against slide chain | 4 | 4 | 4 | 4 | 256 | merged→F2 | 002 |
+| 110 | Chain rebuild interactive: drag steps into order, grade against slide chain | 4 | 4 | 4 | 4 | 256 | merged into #5 | 002 |
 | 111 | Read-aloud button using speechSynthesis for the current slide | 4 | 5 | 3 | 5 | 300 | open | 002 |
