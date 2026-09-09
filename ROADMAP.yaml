@@ -1,5 +1,5 @@
-roadmap_revision: 66e885005b1cb9c1016ca0ae62c72f3d71fa2a32
-updated_at: 2026-09-08T00:00:00Z
+roadmap_revision: 68af50ab49db1256f4aafe5fc84667ebb143e189
+updated_at: 2026-09-09T04:20:16Z
 owners:
   - kvnloo
 items:
@@ -43,3 +43,18 @@ items:
     priority: P3
     acceptance: A failure-mode catalog defines native-speaker review, offline output, risk thresholds, and machine-translation stop cases.
     claimable: true
+  - issue: 11
+    priority: P1
+    acceptance: Six recall prompts per brief; grading writes synergy.recall.v1; due strip appears when a card is due.
+    claimable: true
+    repo: kvnloo/synergy.ai
+  - issue: 12
+    priority: P1
+    acceptance: Service worker registered, cache populated, page renders offline; briefs.json count 7; manifest and icons 200.
+    claimable: true
+    repo: kvnloo/synergy.ai
+  - issue: 13
+    priority: P1
+    acceptance: Seven reviewed dates; correction URL carries task_type=verify-evidence; home widget opens the right slide with the form.
+    claimable: true
+    repo: kvnloo/synergy.ai
