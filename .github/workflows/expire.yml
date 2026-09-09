@@ -1,0 +1,20 @@
+name: Expire claims
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+permissions:
+  contents: read
+  issues: write
+jobs:
+  expire:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install 'pyyaml==6.0.*'
+      - run: python .github/scripts/common.py expire
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

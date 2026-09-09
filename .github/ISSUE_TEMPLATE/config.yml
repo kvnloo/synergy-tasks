@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: How contribution works
+    url: https://kvnloo.github.io/synergy.ai/#loop
+    about: Read the contribution loop before proposing work.

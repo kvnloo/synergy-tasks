@@ -1,0 +1,66 @@
+name: Humanitarian task
+description: Propose a bounded humanitarian research or prototyping task.
+title: ""
+labels:
+  - task
+  - needs-triage
+body:
+  - type: input
+    id: brief
+    attributes:
+      label: Synergy brief
+      description: Synergy brief id, or none.
+      placeholder: sudan-access
+    validations:
+      required: true
+  - type: dropdown
+    id: task_type
+    attributes:
+      label: Task type
+      options:
+        - verify-evidence
+        - write-brief
+        - prototype
+        - responder-tool
+        - translate
+    validations:
+      required: true
+  - type: input
+    id: jurisdiction
+    attributes:
+      label: Jurisdiction
+      description: Where must this work?
+    validations:
+      required: true
+  - type: input
+    id: intended_user
+    attributes:
+      label: Intended user
+      description: Who will use the result?
+    validations:
+      required: true
+  - type: textarea
+    id: hypothesis
+    attributes:
+      label: Solution hypothesis
+    validations:
+      required: true
+  - type: textarea
+    id: insights
+    attributes:
+      label: Briefing insights
+  - type: textarea
+    id: deliverables
+    attributes:
+      label: Deliverables
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Safety
+      options:
+        - label: No sensitive personal data will be collected or committed
+          required: true
+        - label: No deployment, outreach, spending, or external-system change without maintainer approval
+          required: true
+    validations:
+      required: true
