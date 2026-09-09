@@ -35,7 +35,7 @@ Statuses: `open`, `selected`, `merged→Fn`, `shipped`, `merged into #n`, `defer
 | 29 | Archive snapshot link per source | 4 | 4 | 3 | 4 | 192 | open | 003 |
 | 30 | Sentence-level anchors into source passages | 4 | 2 | 5 | 2 | 80 | open | 003 |
 | 31 | Focus reader: hide chrome, optional 25-minute block | 4 | 4 | 3 | 5 | 240 | open | 003 |
-| 32 | "You're done for today" end state; no infinite scroll, ever | 4 | 5 | 3 | 5 | 300 | selected F2 | 003 |
+| 32 | "You're done for today" end state; no infinite scroll, ever | 4 | 5 | 3 | 5 | 300 | shipped | 003 |
 | 33 | Ninety-minute deep session: three briefs plus recall, then a break cue | 3 | 3 | 3 | 4 | 108 | open | 003 |
 | 34 | Read-later list exported as a calendar file, never a notification | 3 | 3 | 2 | 4 | 72 | open | 003 |
 | 35 | Weekly rhythm marker instead of daily streaks | 3 | 3 | 2 | 5 | 90 | open | 003 |
@@ -44,7 +44,7 @@ Statuses: `open`, `selected`, `merged→Fn`, `shipped`, `merged into #n`, `defer
 | 38 | Single-task whiteboard mode | 2 | 3 | 2 | 4 | 48 | open | 003 |
 | 39 | Session summary card on close: read, recall next | 3 | 4 | 3 | 4 | 144 | open | 003 |
 | 40 | Keyboard-first navigation audit | 3 | 4 | 2 | 5 | 120 | open | 003 |
-| 41 | Read-aloud via browser speech synthesis | 4 | 5 | 3 | 5 | 300 | selected F3 | 003 |
+| 41 | Read-aloud via browser speech synthesis | 4 | 5 | 3 | 5 | 300 | shipped | 003 |
 | 42 | Dyslexia-friendly type and spacing toggle | 3 | 5 | 2 | 5 | 150 | open | 003 |
 | 43 | Screen-reader and keyboard audit of the reader dialog | 4 | 5 | 3 | 4 | 240 | open | 003 |
 | 44 | Plain-language variant per slide | 5 | 3 | 3 | 2 | 90 | open | 003 |
@@ -55,7 +55,7 @@ Statuses: `open`, `selected`, `merged→Fn`, `shipped`, `merged into #n`, `defer
 | 49 | Multilingual glossary | 4 | 3 | 3 | 3 | 108 | open | 003 |
 | 50 | High-contrast theme | 3 | 5 | 2 | 5 | 150 | open | 003 |
 | 51 | Brief: sleep as public-health infrastructure (shift work, heat, light) | 5 | 4 | 4 | 4 | 320 | shipped | 002 |
-| 52 | Brief: psychological first aid in crises | 5 | 4 | 4 | 4 | 320 | selected F1 | 003 |
+| 52 | Brief: psychological first aid in crises | 5 | 4 | 4 | 4 | 320 | shipped | 003 |
 | 53 | Brief: micronutrient deficiency chains in food insecurity | 5 | 3 | 4 | 3 | 180 | open | 003 |
 | 54 | Brief: vaccine cold-chain logistics | 5 | 3 | 4 | 3 | 180 | open | 003 |
 | 55 | Brief: household air pollution and clean cooking | 5 | 3 | 4 | 3 | 180 | open | 003 |
@@ -109,16 +109,16 @@ Statuses: `open`, `selected`, `merged→Fn`, `shipped`, `merged into #n`, `defer
 | 103 | Correction inbox badge on home: count of open verify-evidence tasks | 3 | 4 | 2 | 5 | 120 | open | 003 |
 | 104 | Offline-first language pack hook: detect navigator.language, fall back cleanly | 4 | 3 | 3 | 4 | 144 | open | 003 |
 | 105 | Source liveness CI job that opens a task when a cited URL 404s | 4 | 5 | 3 | 5 | 300 | open | 003 |
-| 106 | Reader stop card: you're done for today after one brief + recall | 4 | 5 | 3 | 5 | 300 | merged→F2 | 003 |
+| 106 | Reader stop card: you're done for today after one brief + recall | 4 | 5 | 3 | 5 | 300 | merged into #32 | 003 |
 | 107 | Micro-task lane: 5-minute verify tasks sorted above 45-minute ones on the board | 4 | 4 | 4 | 4 | 256 | open | 003 |
 | 108 | Persist whiteboard drafts in localStorage across reloads | 4 | 5 | 3 | 5 | 300 | open | 003 |
 | 109 | Volunteer paths page: verify · donate compute · write a brief | 4 | 5 | 3 | 5 | 300 | open | 003 |
 | 110 | Chain rebuild interactive: drag steps into order, grade against slide chain | 4 | 4 | 4 | 4 | 256 | merged into #5 | 002 |
-| 111 | Read-aloud button using speechSynthesis for the current slide | 4 | 5 | 3 | 5 | 300 | merged→F3 | 003 |
-| 112 | Done-for-today card blocks story grid until tomorrow (device clock) | 4 | 5 | 2 | 5 | 200 | merged→F2 | 003 |
-| 113 | Read-aloud respects prefers-reduced-motion and pause on tab hide | 3 | 5 | 2 | 5 | 150 | merged→F3 | 003 |
-| 114 | PFA brief: listen first, protect dignity, link not lecture | 5 | 4 | 4 | 4 | 320 | merged→F1 | 003 |
+| 111 | Read-aloud button using speechSynthesis for the current slide | 4 | 5 | 3 | 5 | 300 | merged into #41 | 003 |
+| 112 | Done-for-today card blocks story grid until tomorrow (device clock) | 4 | 5 | 2 | 5 | 200 | merged into #32 | 003 |
+| 113 | Read-aloud respects prefers-reduced-motion and pause on tab hide | 3 | 5 | 2 | 5 | 150 | merged into #41 | 003 |
+| 114 | PFA brief: listen first, protect dignity, link not lecture | 5 | 4 | 4 | 4 | 320 | merged into #52 | 003 |
 | 115 | Soft chime optional off by default when daily stop triggers | 2 | 3 | 1 | 5 | 30 | open | 003 |
-| 116 | Speech rate control ±20% next to read-aloud | 3 | 5 | 2 | 5 | 150 | merged→F3 | 003 |
-| 117 | Stop state shows one due recall prompt only, never a feed | 4 | 5 | 3 | 5 | 300 | merged→F2 | 003 |
-| 118 | PFA do/don't card as final slide checklist | 4 | 4 | 3 | 5 | 240 | merged→F1 | 003 |
+| 116 | Speech rate control ±20% next to read-aloud | 3 | 5 | 2 | 5 | 150 | merged into #41 | 003 |
+| 117 | Stop state shows one due recall prompt only, never a feed | 4 | 5 | 3 | 5 | 300 | merged into #32 | 003 |
+| 118 | PFA do/don't card as final slide checklist | 4 | 4 | 3 | 5 | 240 | merged into #52 | 003 |
