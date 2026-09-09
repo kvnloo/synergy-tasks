@@ -4,19 +4,19 @@
 
 | # | Idea | R | I | D | F | Score | Status |
 |---|---|---|---|---|---|---|---|
-| 1 | Recall prompts per brief: one cue per slide plus a chain rebuild; reveal, then self-grade | 5 | 5 | 4 | 5 | 500 | selected F1 |
-| 2 | "Due today" recall queue on the home page from the self-grades, scheduled on the device | 4 | 4 | 4 | 5 | 320 | merged→F1 |
-| 3 | Priming line on slide 1: the five questions this brief answers, shown before reading | 4 | 4 | 3 | 5 | 240 | merged→F1 |
+| 1 | Recall prompts per brief: one cue per slide plus a chain rebuild; reveal, then self-grade | 5 | 5 | 4 | 5 | 500 | shipped |
+| 2 | "Due today" recall queue on the home page from the self-grades, scheduled on the device | 4 | 4 | 4 | 5 | 320 | merged into #1 |
+| 3 | Priming line on slide 1: the five questions this brief answers, shown before reading | 4 | 4 | 3 | 5 | 240 | merged into #1 |
 | 4 | Chain-rebuild drill: shuffled chain steps to put back in order | 4 | 4 | 4 | 4 | 256 | open |
 | 5 | Two-sentence explanation box after reading, compared against the brief summary | 4 | 4 | 4 | 5 | 320 | open |
 | 6 | "Next brief" picks a different topic than the last one read | 3 | 3 | 2 | 5 | 90 | open |
 | 7 | Honest retention ledger: claims recalled this month, device-only | 3 | 3 | 2 | 5 | 90 | open |
 | 8 | Export recall prompts as CSV for flashcard apps | 3 | 4 | 3 | 5 | 180 | open |
 | 9 | Progressive prompts: cue → free recall → apply to a new country | 3 | 3 | 4 | 4 | 144 | open |
-| 10 | "How to read a brief" sixty-second onboarding | 5 | 5 | 3 | 5 | 375 | merged→F1 |
-| 11 | Installable app; whole site works offline after the first visit | 5 | 5 | 4 | 4 | 400 | selected F2 |
-| 12 | Open data: `data/briefs.json` export of every brief, CC-BY-4.0 | 4 | 4 | 3 | 5 | 240 | merged→F2 |
-| 13 | Share metadata so links preview cleanly in messaging apps | 5 | 5 | 2 | 4 | 200 | merged→F2 |
+| 10 | "How to read a brief" sixty-second onboarding | 5 | 5 | 3 | 5 | 375 | merged into #1 |
+| 11 | Installable app; whole site works offline after the first visit | 5 | 5 | 4 | 4 | 400 | shipped |
+| 12 | Open data: `data/briefs.json` export of every brief, CC-BY-4.0 | 4 | 4 | 3 | 5 | 240 | merged into #11 |
+| 13 | Share metadata so links preview cleanly in messaging apps | 5 | 5 | 2 | 4 | 200 | merged into #11 |
 | 14 | Data-saver mode: skip webfonts and animation on slow connections | 5 | 4 | 2 | 4 | 160 | open |
 | 15 | Print/PDF brief pack with sources for offline teaching | 4 | 4 | 3 | 4 | 192 | open |
 | 16 | RSS/Atom feed of briefs | 3 | 5 | 2 | 5 | 150 | open |
@@ -24,10 +24,10 @@
 | 18 | Embeddable brief widget for partner sites | 4 | 3 | 3 | 3 | 108 | open |
 | 19 | One-command self-host mirror for intranets | 3 | 3 | 3 | 4 | 108 | open |
 | 20 | SMS/USSD brief digest | 5 | 2 | 3 | 1 | 30 | open |
-| 21 | "Flag a problem" on every slide, routed to the brief's open verify-evidence task | 5 | 5 | 3 | 5 | 375 | selected F3 |
-| 22 | "Verify this source" three-minute micro-task: supports/contradicts plus the exact passage | 4 | 5 | 4 | 4 | 320 | merged→F3 |
-| 23 | "One claim to check today" on the home page | 4 | 5 | 3 | 5 | 300 | merged→F3 |
-| 24 | Last-reviewed date on every brief | 5 | 5 | 2 | 5 | 250 | merged→F3 |
+| 21 | "Flag a problem" on every slide, routed to the brief's open verify-evidence task | 5 | 5 | 3 | 5 | 375 | shipped |
+| 22 | "Verify this source" three-minute micro-task: supports/contradicts plus the exact passage | 4 | 5 | 4 | 4 | 320 | merged into #21 |
+| 23 | "One claim to check today" on the home page | 4 | 5 | 3 | 5 | 300 | merged into #21 |
+| 24 | Last-reviewed date on every brief | 5 | 5 | 2 | 5 | 250 | merged into #21 |
 | 25 | Evidence type badges: guidance, peer-reviewed, reporting, dataset | 5 | 4 | 4 | 4 | 320 | open |
 | 26 | Strongest counter-evidence field per slide | 4 | 4 | 4 | 3 | 192 | open |
 | 27 | Change log per brief, including retractions | 4 | 4 | 3 | 4 | 192 | open |
@@ -113,3 +113,11 @@
 
 ## Outcome
 
+Shipped:
+- **F1 Retain what you read** (ideas #1+#2+#3+#10) in `kvnloo/synergy.ai@ddf90a3` — six prompts per brief, device-local grades, due strip on home.
+- **F2 Works anywhere** (ideas #11+#12+#13) — service worker shell, install manifest, `data/briefs.json` CC-BY-4.0, share metadata.
+- **F3 Fix what's wrong in three minutes** (ideas #21+#22+#23+#24) — reviewed dates, per-source verify form, home claim-of-the-day, correction path into the task queue.
+
+Cut: none. All three features shipped as scoped.
+
+Weighting for cycle 002: new briefs scored high on reach × depth but feasibility stayed at 3; batch one content-only brief as a fourth item when F stays ≥4 for the code features, or accept a two-feature code cycle plus one brief. Trust tooling (evidence badges, source liveness) is the next compounding surface after F3.

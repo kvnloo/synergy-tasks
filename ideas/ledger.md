@@ -4,19 +4,19 @@ Statuses: `open`, `selected`, `merged→Fn`, `shipped`, `merged into #n`, `defer
 
 | # | Idea | R | I | D | F | Score | Status | Cycle |
 |---|---|---|---|---|---|---|---|---|
-| 1 | Recall prompts per brief: one cue per slide plus a chain rebuild; reveal, then self-grade | 5 | 5 | 4 | 5 | 500 | selected F1 | 001 |
-| 2 | "Due today" recall queue on the home page from the self-grades, scheduled on the device | 4 | 4 | 4 | 5 | 320 | merged→F1 | 001 |
-| 3 | Priming line on slide 1: the five questions this brief answers, shown before reading | 4 | 4 | 3 | 5 | 240 | merged→F1 | 001 |
+| 1 | Recall prompts per brief: one cue per slide plus a chain rebuild; reveal, then self-grade | 5 | 5 | 4 | 5 | 500 | shipped | 001 |
+| 2 | "Due today" recall queue on the home page from the self-grades, scheduled on the device | 4 | 4 | 4 | 5 | 320 | merged into #1 | 001 |
+| 3 | Priming line on slide 1: the five questions this brief answers, shown before reading | 4 | 4 | 3 | 5 | 240 | merged into #1 | 001 |
 | 4 | Chain-rebuild drill: shuffled chain steps to put back in order | 4 | 4 | 4 | 4 | 256 | open | 001 |
 | 5 | Two-sentence explanation box after reading, compared against the brief summary | 4 | 4 | 4 | 5 | 320 | open | 001 |
 | 6 | "Next brief" picks a different topic than the last one read | 3 | 3 | 2 | 5 | 90 | open | 001 |
 | 7 | Honest retention ledger: claims recalled this month, device-only | 3 | 3 | 2 | 5 | 90 | open | 001 |
 | 8 | Export recall prompts as CSV for flashcard apps | 3 | 4 | 3 | 5 | 180 | open | 001 |
 | 9 | Progressive prompts: cue → free recall → apply to a new country | 3 | 3 | 4 | 4 | 144 | open | 001 |
-| 10 | "How to read a brief" sixty-second onboarding | 5 | 5 | 3 | 5 | 375 | merged→F1 | 001 |
-| 11 | Installable app; whole site works offline after the first visit | 5 | 5 | 4 | 4 | 400 | selected F2 | 001 |
-| 12 | Open data: `data/briefs.json` export of every brief, CC-BY-4.0 | 4 | 4 | 3 | 5 | 240 | merged→F2 | 001 |
-| 13 | Share metadata so links preview cleanly in messaging apps | 5 | 5 | 2 | 4 | 200 | merged→F2 | 001 |
+| 10 | "How to read a brief" sixty-second onboarding | 5 | 5 | 3 | 5 | 375 | merged into #1 | 001 |
+| 11 | Installable app; whole site works offline after the first visit | 5 | 5 | 4 | 4 | 400 | shipped | 001 |
+| 12 | Open data: `data/briefs.json` export of every brief, CC-BY-4.0 | 4 | 4 | 3 | 5 | 240 | merged into #11 | 001 |
+| 13 | Share metadata so links preview cleanly in messaging apps | 5 | 5 | 2 | 4 | 200 | merged into #11 | 001 |
 | 14 | Data-saver mode: skip webfonts and animation on slow connections | 5 | 4 | 2 | 4 | 160 | open | 001 |
 | 15 | Print/PDF brief pack with sources for offline teaching | 4 | 4 | 3 | 4 | 192 | open | 001 |
 | 16 | RSS/Atom feed of briefs | 3 | 5 | 2 | 5 | 150 | open | 001 |
@@ -24,10 +24,10 @@ Statuses: `open`, `selected`, `merged→Fn`, `shipped`, `merged into #n`, `defer
 | 18 | Embeddable brief widget for partner sites | 4 | 3 | 3 | 3 | 108 | open | 001 |
 | 19 | One-command self-host mirror for intranets | 3 | 3 | 3 | 4 | 108 | open | 001 |
 | 20 | SMS/USSD brief digest | 5 | 2 | 3 | 1 | 30 | open | 001 |
-| 21 | "Flag a problem" on every slide, routed to the brief's open verify-evidence task | 5 | 5 | 3 | 5 | 375 | selected F3 | 001 |
-| 22 | "Verify this source" three-minute micro-task: supports/contradicts plus the exact passage | 4 | 5 | 4 | 4 | 320 | merged→F3 | 001 |
-| 23 | "One claim to check today" on the home page | 4 | 5 | 3 | 5 | 300 | merged→F3 | 001 |
-| 24 | Last-reviewed date on every brief | 5 | 5 | 2 | 5 | 250 | merged→F3 | 001 |
+| 21 | "Flag a problem" on every slide, routed to the brief's open verify-evidence task | 5 | 5 | 3 | 5 | 375 | shipped | 001 |
+| 22 | "Verify this source" three-minute micro-task: supports/contradicts plus the exact passage | 4 | 5 | 4 | 4 | 320 | merged into #21 | 001 |
+| 23 | "One claim to check today" on the home page | 4 | 5 | 3 | 5 | 300 | merged into #21 | 001 |
+| 24 | Last-reviewed date on every brief | 5 | 5 | 2 | 5 | 250 | merged into #21 | 001 |
 | 25 | Evidence type badges: guidance, peer-reviewed, reporting, dataset | 5 | 4 | 4 | 4 | 320 | open | 001 |
 | 26 | Strongest counter-evidence field per slide | 4 | 4 | 4 | 3 | 192 | open | 001 |
 | 27 | Change log per brief, including retractions | 4 | 4 | 3 | 4 | 192 | open | 001 |
