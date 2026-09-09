@@ -13,6 +13,11 @@ This repository is the public humanitarian task queue for [Synergy](https://kvnl
 7. A maintainer makes the human merge decision.
 8. The outcome feeds the next roadmap revision.
 
+
+## Cycles
+
+Direction comes from idea cycles: 100 ideas, scored for reach, immediacy, depth, and feasibility; the top three ship each cycle. See `docs/CYCLE.md` and `ideas/`.
+
 ## Claim a task
 
 Choose an open issue labeled `claimable` and post this comment. The default lease is 72 hours and the maximum is 168 hours.
