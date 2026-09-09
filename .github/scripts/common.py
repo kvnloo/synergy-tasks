@@ -47,7 +47,13 @@ def parse_block(body: str, kind: str):
     if not match:
         return None
     value = yaml.safe_load(match.group(1)) or {}
-    return value if isinstance(value, dict) else None
+    if not isinstance(value, dict):
+        return None
+    # PyYAML turns RFC3339 into datetime; normalize back to strings for JSON/markers.
+    for key, item in list(value.items()):
+        if isinstance(item, datetime):
+            value[key] = item.astimezone(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
+    return value
 
 
 def labels(issue):
@@ -65,12 +71,14 @@ def comment(number: int, body: str):
 
 
 def iso(value):
+    if isinstance(value, datetime):
+        return value if value.tzinfo else value.replace(tzinfo=timezone.utc)
     return datetime.fromisoformat(str(value).replace("Z", "+00:00"))
 
 
 def claim_marker(comments):
     marker = re.compile(r"<!-- synergy-claim (\{.*?\}) -->")
-    for item in reversed(comments):
+    for item in reversed(comments or []):
         match = marker.search(item.get("body") or "")
         if match:
             try:
@@ -81,9 +89,16 @@ def claim_marker(comments):
 
 
 def open_pr_for(issue: int):
-    query = urllib.parse.quote(f"repo:{REPO} is:pr is:open \"Fixes #{issue}\"")
-    items = api("GET", f"/search/issues?q={query}&per_page=10")["items"]
-    return items[0] if items else None
+    """Return an open PR whose body contains Fixes #<issue>, else None.
+
+    Uses the pulls list API (not search) so issue numbers cannot false-positive.
+    """
+    pattern = re.compile(rf"\bFixes\s+#{int(issue)}\b", re.I)
+    pulls = api("GET", f"/repos/{REPO}/pulls?state=open&per_page=100") or []
+    for pull in pulls:
+        if pattern.search(pull.get("body") or ""):
+            return pull
+    return None
 
 
 def handle_claim():
@@ -99,13 +114,22 @@ def handle_claim():
         return
     error = None
     try:
-        if int(claim.get("issue", 0)) != number: error = "Claim issue does not match this issue."
-        elif claim.get("claimant") != actor: error = "Claimant must match the comment author."
-        elif "claimable" not in labels(issue) or "claimed" in labels(issue): error = "Task is not claimable right now."
-        elif iso(claim["expires_at"]) <= iso(claim["claimed_at"]): error = "Claim expiry must follow claim time."
-        elif (iso(claim["expires_at"]) - iso(claim["claimed_at"])).total_seconds() > 168 * 3600: error = "Claim lease exceeds 168 hours."
-        elif open_pr_for(number): error = f"DISCARD_DUPLICATE: PR #{open_pr_for(number)['number']} already covers this issue."
-    except (KeyError, TypeError, ValueError): error = "Claim fields or RFC3339 timestamps are invalid."
+        if int(claim.get("issue", 0)) != number:
+            error = "Claim issue does not match this issue."
+        elif claim.get("claimant") != actor:
+            error = "Claimant must match the comment author."
+        elif "claimable" not in labels(issue) or "claimed" in labels(issue):
+            error = "Task is not claimable right now."
+        elif iso(claim["expires_at"]) <= iso(claim["claimed_at"]):
+            error = "Claim expiry must follow claim time."
+        elif (iso(claim["expires_at"]) - iso(claim["claimed_at"])).total_seconds() > 168 * 3600:
+            error = "Claim lease exceeds 168 hours."
+        else:
+            existing = open_pr_for(number)
+            if existing:
+                error = f"DISCARD_DUPLICATE: PR #{existing['number']} already covers this issue."
+    except (KeyError, TypeError, ValueError):
+        error = "Claim fields or RFC3339 timestamps are invalid."
     if error:
         comment(number, error); return
     marker_data = {key: claim[key] for key in ("claimant", "expires_at", "harness", "claimed_at")}
